@@ -1,0 +1,453 @@
+/*!
+ * Main content
+ */
+
+.main {
+  
+  & .best {
+    min-height: 115px;
+    background: $color-violet;
+    color: $color-white;
+
+    & .number {
+      display: block;
+      width: 110px;
+      height: 110px;
+      border: 5px solid $color-violet;
+      margin-top: -55px;
+      background: $color-white;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: -5px;
+      color: $color-violet;
+      box-sizing: border-box;
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 100px;
+    }
+  }
+
+  & .selebrate {
+    display: flex;
+    align-items: center;
+
+    &-block {
+      position: relative;
+      overflow: hidden;
+
+      &:hover .selebrate-block-description {
+        display: block;
+        transition: .3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        transform: translateY(0px);
+      }
+      
+      & .selebrate-block-1 {
+        background: url("../images/img-birthday.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-2 {
+        background: url("../images/img-newyear.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-3 {
+        background: url("../images/img-show.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-4 {
+        background: url("../images/img-party.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-5 {
+        background: url("../images/img-leisure.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-6 {
+        background: url("../images/img-magic.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-7 {
+        background: url("../images/img-chemistry.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-8 {
+        background: url("../images/img-foam.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-9 {
+        background: url("../images/img-bubble.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-10 {
+        background: url("../images/img-monster.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-11 {
+        background: url("../images/img-banana.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-12 {
+        background: url("../images/img-cowboy.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-13 {
+        background: url("../images/img-ice.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-14 {
+        background: url("../images/img-kitty.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-15 {
+        background: url("../images/img-superman.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-16 {
+        background: url("../images/img-pepa.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-17 {
+        background: url("../images/img-indian.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-18 {
+        background: url("../images/img-masterclass.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-19 {
+        background: url("../images/img-decor.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-20 {
+        background: url("../images/img-bar.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      & .selebrate-block-21 {
+        background: url("../images/img-zoo.jpg") center top no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+
+
+      &-item {
+        min-height: 300px;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+
+        &.show {
+          min-height: 400px;
+        }
+        &.theme h3 {
+          font-size: 22px;
+        }
+      }
+
+      &-description {
+        padding: 20px;
+        font-size: 15px;
+        //display: none;
+        transition: .3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        transform: translateY(-300px);
+        z-index: 1;
+      }
+
+      & h3 {
+        width: 100%;
+        min-height: 80px;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        justify-content: center;
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 0;
+        z-index: 9;
+        position: relative;
+
+        &.bottom {
+          position: absolute;
+          bottom: 0;
+        }
+
+        &.lilac {
+          background: $color-lilac;
+        }
+        &.vialet {
+          background: $color-violet;
+        }
+        &.blue {
+          background: $color-blue;
+        }
+        &.blue-dark {
+          background: $color-blue-dark;
+        }
+      }
+    }
+
+    & .description {
+      text-align: right;
+    }
+
+    & .title {
+      font-size: 36px;
+      margin-top: 10px;
+    }
+  }
+
+  & .order {
+    background: $color-green url("../images/main-bg.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 380px;
+
+    @media screen and (max-width: 991px) {
+      background: $color-green url("../images/main-bg.jpg") center left no-repeat;
+    }
+  }
+
+  & .free {
+    background: $color-yellow url("../images/footer-bg.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 380px;
+
+    @media screen and (max-width: 991px) {
+      background: $color-yellow url("../images/footer-bg.jpg") center right no-repeat;
+    }
+  }
+}
+
+
+
+.jcarousel-wrapper {
+  margin: 20px auto;
+  position: relative;
+}
+
+.jcarousel-wrapper .jcarousel-control-prev,
+.jcarousel-wrapper .jcarousel-control-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  width: 32px;
+  height: 59px;
+}
+
+.jcarousel-wrapper .jcarousel-control-prev, .parallax_classic.bullets .leftNav {
+  background: none;
+  left: 5px;
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  &:hover {
+    background: $color-blue;
+    text-decoration: none;
+
+    &:after {
+      color: #fff;
+    }
+  }
+
+  &:after {
+    content: "\f104";
+    font-family: FontAwesome;
+    color: $color-blue;
+    font-size: 33px;
+    display: block;
+    border: 2px solid $color-blue;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    line-height: 40px;
+    padding-right: 4px;
+  }
+}
+
+.jcarousel-wrapper .jcarousel-control-next, .parallax_classic.bullets .rightNav {
+  background: none;
+  right: 5px;
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  &:hover {
+    background: $color-blue;
+    text-decoration: none;
+
+    &:after {
+      color: #fff;
+    }
+  }
+
+  &:after {
+    content: "\f105";
+    font-family: FontAwesome;
+    color: $color-blue;
+    font-size: 33px;
+    display: block;
+    border: 2px solid $color-blue;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    line-height: 40px;
+    padding-left: 4px;
+  }
+}
+
+.jcarousel-wrapper .jcarousel-pagination {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  margin: 0;
+}
+
+.jcarousel-wrapper .jcarousel-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  line-height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  text-indent: -9999px;
+  margin-right: 7px;
+  opacity: .25;
+}
+
+.jcarousel-wrapper .jcarousel-pagination a.active {
+  background: #4699ec;
+  opacity: 1;
+}
+
+.jcarousel-wrapper .jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.jcarousel-wrapper .jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel-wrapper .jcarousel ul li {
+  float: left;
+  width: 200px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.jcarousel-wrapper .jcarousel ul li .photo {
+  width: 126px;
+  height: 126px;
+  border-radius: 5%;
+  display: block;
+  margin: 0 auto 30px;
+  background: $color-grey;
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.jcarousel-wrapper .jcarousel ul li h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: $color-violet;
+  padding-left: 146px;
+}
+.jcarousel-wrapper .jcarousel ul li p {
+  font-size: 14px;
+  padding-left: 146px;
+}
+
+.jcarousel-wrapper .jcarousel ul li .testimonials-stars {
+  margin: -20px auto 10px;
+  text-align: center;
+}
+
+.jcarousel-wrapper .jcarousel ul li .testimonials-stars img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto !important;
+}

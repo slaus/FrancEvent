@@ -1,0 +1,32 @@
+/*!
+ * Footer content
+ */
+.footer {
+  background: $color-violet url("../images/footer.jpg") center bottom no-repeat;
+  background-size: cover;
+  color: $color-white;
+  padding-top: 5px;
+  font-size: 16px;
+
+  & .address {
+
+    & a:hover {
+      color: $color-white;
+      text-decoration: none;
+      border-bottom: 1px dashed $color-white;
+    }
+
+    & .icon {
+      font-size: 34px;
+    }
+
+    &-block {
+      margin: 10px;
+
+      & .phone {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
