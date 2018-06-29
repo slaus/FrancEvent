@@ -54,28 +54,53 @@ input:focus, textarea, a, button {
 
 #back-to-top {
   color: $color-white;
-  width: 56px;
-  height: 56px;
+  width: 50px;
+  height: 50px;
   background-color: $color-lilac;
   text-transform: uppercase;
   position: fixed;
   right: 54px;
   bottom: 80px;
   border-radius: 50%;
-  line-height: 50px;
+  line-height: 40px;
   font-size: 22px;
   text-align: center;
   cursor: pointer;
   display: none;
   z-index: 999;
+  transition: .5s;
 
   &:hover {
-    background: $color-lilac;
+    background: $color-blue;
+    transition: .5s;
     text-decoration: none;
 
     & .fa {
       color: rgba(255,255,255,.6);
     }
+  }
+}
+
+.triangle {
+  width: 50px;
+  height: 50px;
+  background-color: $color-lilac;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  transition: .5s;
+  
+  &:hover {
+    background: $color-blue;
+    transition: .5s;
+  }
+
+  & a {
+    z-index: 9;
   }
 }
 
@@ -206,3 +231,35 @@ a {
   transform: scaleY(1);
 }
 
+/* Pulse Shrink */
+@-webkit-keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.hvr-pulse-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse-shrink,.hvr-pulse-shrink:hover, .hvr-pulse-shrink:focus, .hvr-pulse-shrink:active {
+  -webkit-animation-name: hvr-pulse-shrink;
+  animation-name: hvr-pulse-shrink;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}

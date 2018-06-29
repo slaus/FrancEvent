@@ -31,8 +31,8 @@
     <meta property="og:description"
           content="«Организация детских праздников на Лазурном берегу. Тел.: +33643568447, +33619910285"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://n-book.in.ua/"/>
-    <meta property="og:image" content="https://n-book.in.ua/image/catalog/n-booki.png">
+    <meta property="og:url" content="/"/>
+    <meta property="og:image" content="/images/logo.png">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
 
@@ -64,6 +64,20 @@
 <div class="wrapper" id="wrapper">
 
     <header class="header">
+        <div class="slogan">
+            <div class="slogan-left">
+                <h1 class="text-center bold text-uppercase white"><span>Организация </span><span class="violet">Детских праздников </span><span>на Лазурном берегу</span></h1>
+            </div>
+            <div class="slogan-right">
+                <form action="sendmail.php" method="post" class="form-group form-order">
+                    <h5 class="bold text-center text-uppercase violet">Закажите праздник прямо сейчас!</h5>
+                    <h5 class="text-uppercase text-center margin-bottom-20">Заполните форму и мы свяжемся с вами.</h5>
+                    <input type="text" class="input" name="name" placeholder="Ваше имя" required>
+                    <input type="tel" class="input" name="tel" placeholder="Ваш номер телефона" required>
+                    <input type="submit" class="button bold text-uppercase white" value="Отправить заявку">
+                </form>
+            </div>
+        </div>
         <div class="container-fluid header-top-menu">
             <div class="row">
                 <div class="container">
@@ -90,12 +104,12 @@
         <div class="container">
             <nav id="menu">
                 <ul class="top-menu">
-                    <li><a href="" class="hvr-sweep-to-bottom">Празники</a></li>
-                    <li><a href="" class="hvr-sweep-to-bottom">Шоу</a></li>
-                    <li><a href="" class="hvr-sweep-to-bottom">Услуги</a></li>
-                    <li><a href="" class="hvr-sweep-to-bottom">Отзывы</a></li>
-                    <li><a href="" class="hvr-sweep-to-bottom">Портфолио</a></li>
-                    <li><a href="" class="hvr-sweep-to-bottom">Контакты</a></li>
+                    <li><a href="#selebrate" class="hvr-sweep-to-bottom smooth-scroll">Празники</a></li>
+                    <li><a href="#show" class="hvr-sweep-to-bottom smooth-scroll">Шоу</a></li>
+                    <li><a href="#services" class="hvr-sweep-to-bottom smooth-scroll">Услуги</a></li>
+                    <li><a href="#themes" class="hvr-sweep-to-bottom smooth-scroll">Темы</a></li>
+                    <li><a href="#reviews" class="hvr-sweep-to-bottom smooth-scroll">Отзывы</a></li>
+                    <li><a href="#contacts" class="hvr-sweep-to-bottom smooth-scroll">Контакты</a></li>
                 </ul>
             </nav>
         </div>
@@ -126,7 +140,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="selebrate">
             <div class="row selebrate margin-top-20 margin-bottom-20">
                 <div class="col-xs-12 col-sm-6">
                     <h5 class="description grey bold text-uppercase">
@@ -147,7 +161,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                                 elit. Fuga in ipsum iure maxime nam optio quae quibusdam quos saepe totam?
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -164,7 +178,7 @@
                                         nobis placeat
                                         praesentium.
                                     </p>
-                                    <a href="" class="btn btn-info">Заказать</a>
+                                    <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                                 </div>
                             </div>
                         </div>
@@ -178,7 +192,7 @@
                                         veniam
                                         vero.
                                     </p>
-                                    <a href="" class="btn btn-info">Заказать</a>
+                                    <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                                 </div>
                             </div>
                         </div>
@@ -192,7 +206,7 @@
                                         totam
                                         ut?
                                     </p>
-                                    <a href="" class="btn btn-info">Заказать</a>
+                                    <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +220,7 @@
                                         elit. Alias at, aut corporis cum enim iusto magni nisi pariatur reprehenderit
                                         soluta!
                                     </p>
-                                    <a href="" class="btn btn-info">Заказать</a>
+                                    <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +229,13 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="triangle text-center">
+            <a href="#show" class="smooth-scroll hvr-pulse-shrink"><svg width="50" height="25">
+                <polygon points="0,0 25,10 50,0 25,25" fill="#fff" stroke="#fff" stroke-width="0"/>
+            </svg></a>
+        </div>
+
+        <div class="container" id="show">
             <div class="row selebrate margin-top-20 margin-bottom-20">
                 <div class="col-xs-12 col-sm-6">
                     <h5 class="description grey bold text-uppercase">
@@ -239,7 +259,7 @@
                                 nobis placeat
                                 praesentium.
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -252,7 +272,7 @@
                                 elit. Ab adipisci aliquam iure nesciunt placeat quasi, quidem quisquam rem veniam
                                 vero.
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -265,7 +285,7 @@
                                 elit. Commodi dolore esse, explicabo fuga ipsum minima nihil obcaecati sequi totam
                                 ut?
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -278,11 +298,17 @@
                                 elit. Alias at, aut corporis cum enim iusto magni nisi pariatur reprehenderit
                                 soluta!
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="triangle text-center">
+            <a href="#themes" class="smooth-scroll hvr-pulse-shrink"><svg width="50" height="25">
+                <polygon points="0,0 25,10 50,0 25,25" fill="#fff" stroke="#fff" stroke-width="0"/>
+            </svg></a>
         </div>
 
         <div class="container-fluid order margin-top-20 margin-bottom-20">
@@ -290,20 +316,26 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 col-md-6 padding-top-20 padding-bottom-20">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi asperiores beatae
-                            commodi dolorum et labore, laborum minus molestias nobis praesentium quae recusandae
-                            similique sunt vero. Accusantium, consequatur quidem? Vitae!
+                            <h2 class="text-center text-uppercase bold violet">Закажите праздник сейчас !</h2>
+                            <h4 class="text-center violet">Введите Ваш номер телефона и мы свяжемся с вами для обсуждения всех деталей по организации праздника.</h4>
+                            <div class="col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 margin-top-20 margin-bottom-30">
+                                <form action="sendmail.php" method="post" class="form-group form-order">
+                                    <input type="text" class="input" name="name" placeholder="Ваше имя" required>
+                                    <input type="tel" class="input" name="tel" placeholder="Ваш номер телефона" required>
+                                    <input type="submit" class="button bold text-uppercase white" value="Заказать праздник">
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" id="themes">
             <div class="row selebrate margin-top-20 margin-bottom-20">
                 <div class="col-xs-12 col-sm-6">
                     <h5 class="description grey bold text-uppercase">
-                        уникальный сценарий, с участием любимых героев лучшее решение для детского праздника
+                        Уникальный сценарий, с участием любимых героев — лучшее решение для детского праздника
                     </h5>
                 </div>
                 <div class="col-xs-12 col-sm-6">
@@ -315,7 +347,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-3 hvr-sweep-to-bottom selebrate-block padding-bottom-20 selebrate-block-item theme">
                     <div class="selebrate-block-10 hvr-sweep-to-bottom">
-                        <h3 class="text-uppercase bold text-center lilac bottom">вечеринка в стиле монстр хай</h3>
+                        <h3 class="text-uppercase bold text-center lilac bottom">Вечеринка в стиле монстр хай</h3>
                         <div class="selebrate-block-description">
                             <p>Lorem ipsum dolor sit amet, consectetur
                                 adipisicing
@@ -323,52 +355,52 @@
                                 nobis placeat
                                 praesentium.
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 hvr-sweep-to-bottom selebrate-block padding-bottom-20 selebrate-block-item theme">
                     <div class="selebrate-block-11 hvr-sweep-to-bottom">
-                        <h3 class="text-uppercase bold text-center vialet bottom">банановая вечеринка миньон</h3>
+                        <h3 class="text-uppercase bold text-center vialet bottom">Банановая вечеринка Миньон</h3>
                         <div class="selebrate-block-description">
                             <p>Lorem ipsum dolor sit amet, consectetur
                                 adipisicing
                                 elit. Ab adipisci aliquam iure nesciunt placeat quasi, quidem quisquam rem veniam
                                 vero.
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 hvr-sweep-to-bottom selebrate-block padding-bottom-20 selebrate-block-item theme">
                     <div class="selebrate-block-12 hvr-sweep-to-bottom">
-                        <h3 class="text-uppercase bold text-center blue bottom">ковбойская вечеринка</h3>
+                        <h3 class="text-uppercase bold text-center blue bottom">Ковбойская вечеринка</h3>
                         <div class="selebrate-block-description">
                             <p>Lorem ipsum dolor sit amet, consectetur
                                 adipisicing
                                 elit. Commodi dolore esse, explicabo fuga ipsum minima nihil obcaecati sequi totam
                                 ut?
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 hvr-sweep-to-bottom selebrate-block padding-bottom-20 selebrate-block-item theme">
                     <div class="selebrate-block-13 hvr-sweep-to-bottom">
-                        <h3 class="text-uppercase bold text-center lilac bottom">Холодное сердце с эльзой</h3>
+                        <h3 class="text-uppercase bold text-center lilac bottom">Холодное сердце с Эльзой</h3>
                         <div class="selebrate-block-description">
                             <p>Lorem ipsum dolor sit amet, consectetur
                                 adipisicing
                                 elit. Alias at, aut corporis cum enim iusto magni nisi pariatur reprehenderit
                                 soluta!
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 hvr-sweep-to-bottom selebrate-block padding-bottom-20 selebrate-block-item theme">
                     <div class="selebrate-block-14 hvr-sweep-to-bottom">
-                        <h3 class="text-uppercase bold text-center vialet bottom">день рождение с хеллоу китти</h3>
+                        <h3 class="text-uppercase bold text-center vialet bottom">День рождение с хеллоу Китти</h3>
                         <div class="selebrate-block-description">
                             <p>Lorem ipsum dolor sit amet, consectetur
                                 adipisicing
@@ -376,53 +408,59 @@
                                 nobis placeat
                                 praesentium.
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 hvr-sweep-to-bottom selebrate-block padding-bottom-20 selebrate-block-item theme">
                     <div class="selebrate-block-15 hvr-sweep-to-bottom">
-                        <h3 class="text-uppercase bold text-center blue bottom">супермены спасают мир</h3>
+                        <h3 class="text-uppercase bold text-center blue bottom">Супермены спасают мир</h3>
                         <div class="selebrate-block-description">
                             <p>Lorem ipsum dolor sit amet, consectetur
                                 adipisicing
                                 elit. Ab adipisci aliquam iure nesciunt placeat quasi, quidem quisquam rem veniam
                                 vero.
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 hvr-sweep-to-bottom selebrate-block padding-bottom-20 selebrate-block-item theme">
                     <div class="selebrate-block-16 hvr-sweep-to-bottom">
-                        <h3 class="text-uppercase bold text-center lilac bottom">вечеринка в гостях у свинки пеппы</h3>
+                        <h3 class="text-uppercase bold text-center lilac bottom">Вечеринка в гостях у свинки Пеппы</h3>
                         <div class="selebrate-block-description">
                             <p>Lorem ipsum dolor sit amet, consectetur
                                 adipisicing
                                 elit. Commodi dolore esse, explicabo fuga ipsum minima nihil obcaecati sequi totam
                                 ut?
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 hvr-sweep-to-bottom selebrate-block padding-bottom-20 selebrate-block-item theme">
                     <div class="selebrate-block-17 hvr-sweep-to-bottom">
-                        <h3 class="text-uppercase bold text-center vialet bottom">индейцы чингачгук</h3>
+                        <h3 class="text-uppercase bold text-center vialet bottom">Индейцы чингачгук</h3>
                         <div class="selebrate-block-description">
                             <p>Lorem ipsum dolor sit amet, consectetur
                                 adipisicing
                                 elit. Alias at, aut corporis cum enim iusto magni nisi pariatur reprehenderit
                                 soluta!
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <div class="triangle text-center">
+            <a href="#services" class="smooth-scroll hvr-pulse-shrink"><svg width="50" height="25">
+                <polygon points="0,0 25,10 50,0 25,25" fill="#fff" stroke="#fff" stroke-width="0"/>
+            </svg></a>
+        </div>
+
+        <div class="container" id="services">
             <div class="row selebrate margin-top-20 margin-bottom-20">
                 <div class="col-xs-12 col-sm-6">
                     <h5 class="description grey bold text-uppercase">
@@ -446,7 +484,7 @@
                                 nobis placeat
                                 praesentium.
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -459,7 +497,7 @@
                                 elit. Ab adipisci aliquam iure nesciunt placeat quasi, quidem quisquam rem veniam
                                 vero.
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -472,7 +510,7 @@
                                 elit. Commodi dolore esse, explicabo fuga ipsum minima nihil obcaecati sequi totam
                                 ut?
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -485,11 +523,17 @@
                                 elit. Alias at, aut corporis cum enim iusto magni nisi pariatur reprehenderit
                                 soluta!
                             </p>
-                            <a href="" class="btn btn-info">Заказать</a>
+                            <a href="" class="btn btn-info order-event" data-toggle="modal" data-target="#exampleModal">Заказать</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="triangle text-center">
+            <a href="#reviews" class="smooth-scroll hvr-pulse-shrink"><svg width="50" height="25">
+                <polygon points="0,0 25,10 50,0 25,25" fill="#fff" stroke="#fff" stroke-width="0"/>
+            </svg></a>
         </div>
 
         <div class="container-fluid free margin-top-20 margin-bottom-20">
@@ -497,20 +541,27 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-md-6 col-md-offset-6 padding-top-20 padding-bottom-20">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi asperiores beatae
-                            commodi dolorum et labore, laborum minus molestias nobis praesentium quae recusandae
-                            similique sunt vero. Accusantium, consequatur quidem? Vitae!
+                            <h2 class="text-center text-uppercase bold violet">Не знаете что выбрать?</h2>
+                            <h4 class="text-center violet">Получите <strong>БЕСПЛАТНУЮ</strong> консультацию
+                                от организатора лучших деских мероприятий. Введите свои данные и мы свяжемся с вами для обсуждения всех деталей по организации праздника.</h4>
+                            <div class="col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 margin-top-20 margin-bottom-30">
+                                <form action="sendmail.php" method="post" class="form-group form-order">
+                                    <input type="text" class="input" name="name" placeholder="Ваше имя" required>
+                                    <input type="tel" class="input" name="tel" placeholder="Ваш номер телефона" required>
+                                    <input type="submit" class="button bold text-uppercase white" value="Получить консультацию">
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" id="reviews">
             <div class="row selebrate margin-top-20 margin-bottom-20">
                 <div class="col-xs-12 col-sm-6">
                     <h5 class="description grey bold text-uppercase">
-                        мы приносим счастье и радость детям, Лучшеее доказательство этому — отзывы наших клиентов
+                        Мы приносим счастье и радость детям, Лучшеее доказательство этому — отзывы наших клиентов
                     </h5>
                 </div>
                 <div class="col-xs-12 col-sm-6">
@@ -569,9 +620,15 @@
             </div>
         </div>
 
+        <div class="triangle text-center">
+            <a href="#contacts" class="smooth-scroll hvr-pulse-shrink"><svg width="50" height="25">
+                <polygon points="0,0 25,10 50,0 25,25" fill="#fff" stroke="#fff" stroke-width="0"/>
+            </svg></a>
+        </div>
+
     </main>
 
-    <footer class="footer margin-top-30">
+    <footer class="footer margin-top-30" id="contacts">
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.662805596246!2d7.014817753923234!3d43.57075200154963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce81fca808a471%3A0x91269bc8750b4d62!2zNiBSdWUgTcOpcmltw6llLCAwNjExMCBMZSBDYW5uZXQsINCk0YDQsNC90YbQuNGP!5e0!3m2!1sru!2sua!4v1530108343846"
                     width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -612,7 +669,32 @@
     </footer>
 
 
-    <a id="back-to-top" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <a id="back-to-top" class="back-to-top"><svg width="50" height="25" class=" hvr-pulse-shrink">
+        <polygon points="0,25 25,0 50,25 25,15" fill="#fff" stroke="#fff" stroke-width="0"/>
+    </svg></a>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 class="text-center text-uppercase bold violet">Закажите праздник сейчас !</h2>
+                    <h4 class="text-center">Введите Ваш номер телефона и мы свяжемся с вами для обсуждения всех деталей по организации праздника.</h4>
+                        <form action="sendmail.php" method="post" class="form-group form-order">
+                            <input type="text" class="input" name="name" placeholder="Ваше имя" required>
+                            <input type="tel" class="input" name="tel" placeholder="Ваш номер телефона" required>
+                            <textarea name="message" class="input" cols="30" rows="10" placeholder="Введите Ваше сообщение"></textarea>
+                            <input type="submit" class="submit button bold text-uppercase white" value="Заказать">
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="js/jquery-1.12.4.min.js"></script>

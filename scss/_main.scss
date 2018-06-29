@@ -282,6 +282,73 @@
   }
 }
 
+.btn {
+  border: 0;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.modal-content {
+  background: $color-yellow url("../images/header-bg.jpg") left center no-repeat;
+  background-size: cover;
+}
+
+.modal-header {
+  padding: 15px;
+  border-bottom: 0;
+  background: rgba(255,255,255,.6);
+}
+
+.modal-body {
+  position: relative;
+  padding: 15px;
+  background: rgba(255,255,255,.6);
+  padding-right: 50px;
+  padding-left: 50px;
+
+  & h2 {
+    margin-top: 0;
+  }
+}
+
+.form-order {
+
+  & input {
+    width: 100%;
+    height: 48px;
+    background-color: $color-white;
+    margin-bottom: 10px;
+    border: 0;
+
+    &:not([type="submit"]) {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 14px;
+    }
+    
+    &[type="submit"] {
+      background: $color-violet;
+      font-size: 16px;
+      transition: .5s;
+      
+      &:hover {
+        background: $color-blue;
+        transition: .5s;
+      }
+    }
+  }
+
+  & textarea {
+    width: 100%;
+    height: 70px;
+    background-color: $color-white;
+    margin-bottom: 10px;
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+}
 
 
 .jcarousel-wrapper {

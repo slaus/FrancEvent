@@ -166,6 +166,15 @@ jQuery(function ($) {
             }
         });
     });
+
+//Order event
+    $(".order-event").click(function() {
+        var info = $(this).parent(".selebrate-block-description").siblings("h3").text();
+
+        $(".modal-body").find("h4").empty().append("Введите Ваш номер телефона и мы свяжемся с вами для обсуждения всех деталей по организации праздника <span class='violet bold'>«" + info + "»</span>.");
+        $(".modal-body").find("textarea").val("Здравствуйте. Свяжитесь пожалуйста со мной по организации праздника «" + info + "». ");
+        $(".modal-body").find(".submit").val("Заказать «" + info + "»");
+    });
 });
 
 
