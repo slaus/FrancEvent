@@ -1,0 +1,9 @@
+User-agent: *
+Host: landing.n-book.in.ua
+
+User-agent: Yandex
+Clean-param: tracking
+
+User-agent: Googlebot
+Allow: /css*
+Allow: /js*

@@ -239,6 +239,9 @@ a {
   background-size: cover;
   min-height: 610px;
   position: relative; }
+  @media screen and (max-width: 991px) {
+    .header {
+      min-height: 780px; } }
   .header .slogan {
     position: absolute;
     width: 100%;
@@ -251,19 +254,47 @@ a {
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media screen and (max-width: 991px) {
+      .header .slogan {
+        flex-direction: column; } }
+    @media screen and (max-width: 599px) {
+      .header .slogan {
+        padding-top: 140px; } }
     .header .slogan-left {
       width: 100%;
       max-width: 520px; }
       .header .slogan-left h1 {
         text-shadow: 2.5px 4.3px 4px rgba(0, 0, 0, 0.24);
         font-size: 36px; }
+        @media screen and (max-width: 991px) {
+          .header .slogan-left h1 {
+            font-size: 26px; } }
+        @media screen and (max-width: 599px) {
+          .header .slogan-left h1 {
+            font-size: 22px; } }
         .header .slogan-left h1 span {
           display: block;
           margin-bottom: 30px; }
+          @media screen and (max-width: 991px) {
+            .header .slogan-left h1 span {
+              margin-bottom: 10px; } }
           .header .slogan-left h1 span:first-child {
             font-size: 56px; }
+            @media screen and (max-width: 991px) {
+              .header .slogan-left h1 span:first-child {
+                font-size: 42px; } }
+            @media screen and (max-width: 599px) {
+              .header .slogan-left h1 span:first-child {
+                font-size: 34px; } }
           .header .slogan-left h1 span:last-child {
             font-size: 38px; }
+            @media screen and (max-width: 991px) {
+              .header .slogan-left h1 span:last-child {
+                font-size: 28px;
+                margin-bottom: 20px; } }
+            @media screen and (max-width: 599px) {
+              .header .slogan-left h1 span:last-child {
+                font-size: 24px; } }
     .header .slogan-right {
       width: 100%;
       max-width: 380px; }
@@ -296,7 +327,8 @@ a {
   .header .top-menu {
     padding: 0;
     margin: 0;
-    list-style: none; }
+    list-style: none;
+    text-align: center; }
     .header .top-menu li {
       display: inline-block;
       padding: 0;
@@ -313,6 +345,9 @@ a {
             padding-left: 10px;
             padding-right: 10px;
             font-size: 16px; } }
+        @media screen and (max-width: 599px) {
+          .header .top-menu li a {
+            line-height: 50px; } }
         .header .top-menu li a:hover {
           color: #66a1f9; }
 
@@ -323,6 +358,9 @@ a {
   min-height: 115px;
   background: #7c008a;
   color: #fff; }
+  @media screen and (max-width: 599px) {
+    .main .best {
+      display: none; } }
   .main .best .number {
     display: block;
     width: 110px;
@@ -343,6 +381,9 @@ a {
 .main .selebrate {
   display: flex;
   align-items: center; }
+  @media screen and (max-width: 767px) {
+    .main .selebrate {
+      flex-direction: column-reverse; } }
   .main .selebrate-block {
     position: relative;
     overflow: hidden; }
@@ -358,6 +399,9 @@ a {
       display: block;
       height: 100%;
       width: 100%; }
+      @media screen and (max-width: 991px) {
+        .main .selebrate-block .selebrate-block-1 {
+          height: 540px; } }
     .main .selebrate-block .selebrate-block-2 {
       background: url("../images/img-newyear.jpg") center top no-repeat;
       background-size: cover;
@@ -482,13 +526,19 @@ a {
       min-height: 300px;
       padding-bottom: 0;
       margin-bottom: 20px; }
+      @media screen and (max-width: 991px) {
+        .main .selebrate-block-item {
+          height: 300px; } }
+      @media screen and (min-width: 599px) and (max-width: 767px) {
+        .main .selebrate-block-item {
+          width: 50%; } }
       .main .selebrate-block-item.show {
         min-height: 400px; }
       .main .selebrate-block-item.theme h3 {
         font-size: 22px; }
     .main .selebrate-block-description {
-      padding: 20px;
-      font-size: 15px;
+      padding: 10px;
+      font-size: 14px;
       transition: .3s;
       -webkit-transition-timing-function: ease-out;
       transition-timing-function: ease-out;
@@ -520,9 +570,15 @@ a {
         background: #1f1bd2; }
   .main .selebrate .description {
     text-align: right; }
+    @media screen and (max-width: 767px) {
+      .main .selebrate .description {
+        text-align: center; } }
   .main .selebrate .title {
     font-size: 36px;
     margin-top: 10px; }
+    @media screen and (max-width: 767px) {
+      .main .selebrate .title {
+        text-align: center; } }
 
 .main .order {
   background: #88d3dd url("../images/main-bg.jpg") center center no-repeat;
@@ -539,6 +595,13 @@ a {
   @media screen and (max-width: 991px) {
     .main .free {
       background: #fcd520 url("../images/footer-bg.jpg") center right no-repeat; } }
+
+#themes .selebrate-block-description {
+  font-size: 13px; }
+
+@media screen and (max-width: 767px) {
+  .counts-block:nth-child(1), .counts-block:nth-child(2) {
+    height: 180px; } }
 
 .btn {
   border: 0;
@@ -577,6 +640,9 @@ a {
     background: #7c008a;
     font-size: 16px;
     transition: .5s; }
+    @media screen and (max-width: 599px) {
+      .form-order input[type="submit"] {
+        font-size: 12px; } }
     .form-order input[type="submit"]:hover {
       background: #66a1f9;
       transition: .5s; }
